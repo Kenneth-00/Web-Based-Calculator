@@ -7,13 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from './component/calculator/calculator.component';
 
 const routes: Routes = [
-  {
-    path:"myCalculator", component: CalculatorComponent,
-    children: [
-      {path:"calculator", component:CalculatorComponent},
-    ],
-  },
-  {path:"", redirectTo:"myCalculator", pathMatch:"full"}
+  {path:"calculator", component:CalculatorComponent},
+  {path:"**", redirectTo:"calculator"}
 ]
 @NgModule({
   declarations: [

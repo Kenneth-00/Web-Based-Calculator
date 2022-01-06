@@ -1,0 +1,19 @@
+.body {
+    background: rgb(17, 121, 156);
+    padding-top: 100px;
+    height: 85%;
+}
+.content {
+    text-align: center;
+    width: 550px;
+    height: 200px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding-top: 50px;
+    margin: auto;
+    background-image: url("src/assets/bg-math.png");
+    
+}
+h1 {
+    color: white;
+}
