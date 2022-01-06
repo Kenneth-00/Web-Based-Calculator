@@ -4,14 +4,17 @@
             Web Based Basic Calculator
         </h1>
     
-        <input type="number" name="num1">
-        <input type="number" name="num2">
+        <input type="number" name="num1" [(ngModel)] = "num1">
+        <input type="number" name="num2" [(ngModel)] = "num2">
         <br><br>
     
-        <button>ADD</button>
-        <button>SUBTRACT</button>
-        <button>MULTIPLY</button>
-        <button>DIVIDE</button>
+        <button (click)="add()">ADD</button>
+        <button (click)="sub()">SUBTRACT</button>
+        <button (click)="mul()">MULTIPLY</button>
+        <button (click)="div()">DIVIDE</button>
+        <br><br>
+
+        <h3>Result: {{num3}}</h3>
     </div>
     
 </div>

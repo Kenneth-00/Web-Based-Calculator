@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from './component/calculator/calculator.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path:"calculator", component:CalculatorComponent},
-  {path:"**", redirectTo:"calculator"}
+  {path:"", redirectTo:"calculator", pathMatch:"full"}
 ]
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
